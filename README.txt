@@ -23,4 +23,4 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="Cap/Parstagram.gif" width=250/>
+<img src="Cap/Parstagram.gif" width=250/><br>
