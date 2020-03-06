@@ -49,6 +49,7 @@
 		44E30078E8E2FE1A2DD69105 /* Pods_CapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D2EF46F512D3D3F390C9318 /* Pods-CapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapTests.release.xcconfig"; path = "Target Support Files/Pods-CapTests/Pods-CapTests.release.xcconfig"; sourceTree = "<group>"; };
 		51B7783E85986B15F1CE6A42 /* Pods-Cap-CapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cap-CapUITests.release.xcconfig"; path = "Target Support Files/Pods-Cap-CapUITests/Pods-Cap-CapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		830C34AE2412CA4500D8289E /* Cap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cap.entitlements; sourceTree = "<group>"; };
 		83783C26240E36FF0053BE3F /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		83783C28240E55360053BE3F /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		83C7C52D240A573B000AF6F5 /* Cap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +123,7 @@
 		83C7C52F240A573B000AF6F5 /* Cap */ = {
 			isa = PBXGroup;
 			children = (
+				830C34AE2412CA4500D8289E /* Cap.entitlements */,
 				83C7C530240A573B000AF6F5 /* AppDelegate.swift */,
 				83C7C536240A573B000AF6F5 /* Main.storyboard */,
 				83C7C532240A573B000AF6F5 /* SceneDelegate.swift */,
@@ -595,7 +597,11 @@
 			baseConfigurationReference = AF53BFFF020EA3A2A751ABB6 /* Pods-Cap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Cap/Cap.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4DT48WUJ8;
 				INFOPLIST_FILE = Cap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -603,6 +609,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Johann.Cap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -613,7 +621,10 @@
 			baseConfigurationReference = 3DD93F7ED2BCB3A043472A97 /* Pods-Cap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Cap/Cap.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T4DT48WUJ8;
 				INFOPLIST_FILE = Cap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -621,6 +632,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Johann.Cap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
