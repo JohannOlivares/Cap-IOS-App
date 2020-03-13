@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0438DE791598B924CD66E77C /* Pods_Cap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D677971B9B4213ECA0DBF25 /* Pods_Cap.framework */; };
 		7259F580AEB10E7802356341 /* Pods_CapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E30078E8E2FE1A2DD69105 /* Pods_CapTests.framework */; };
+		830C2FB62419C64900CA54C6 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C2FB52419C64900CA54C6 /* CommentCell.swift */; };
 		83783C27240E36FF0053BE3F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83783C26240E36FF0053BE3F /* CameraViewController.swift */; };
 		83783C29240E55360053BE3F /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83783C28240E55360053BE3F /* PostCell.swift */; };
 		83C7C531240A573B000AF6F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C7C530240A573B000AF6F5 /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 		44E30078E8E2FE1A2DD69105 /* Pods_CapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D2EF46F512D3D3F390C9318 /* Pods-CapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapTests.release.xcconfig"; path = "Target Support Files/Pods-CapTests/Pods-CapTests.release.xcconfig"; sourceTree = "<group>"; };
 		51B7783E85986B15F1CE6A42 /* Pods-Cap-CapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cap-CapUITests.release.xcconfig"; path = "Target Support Files/Pods-Cap-CapUITests/Pods-Cap-CapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		830C2FB52419C64900CA54C6 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		830C34AE2412CA4500D8289E /* Cap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cap.entitlements; sourceTree = "<group>"; };
 		83783C26240E36FF0053BE3F /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		83783C28240E55360053BE3F /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				83C7C566240A601C000AF6F5 /* LoginViewController.swift */,
 				83783C26240E36FF0053BE3F /* CameraViewController.swift */,
 				83783C28240E55360053BE3F /* PostCell.swift */,
+				830C2FB52419C64900CA54C6 /* CommentCell.swift */,
 			);
 			path = Cap;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				83C7C533240A573B000AF6F5 /* SceneDelegate.swift in Sources */,
 				83C7C563240A5A85000AF6F5 /* FeedViewController.swift in Sources */,
 				83783C29240E55360053BE3F /* PostCell.swift in Sources */,
+				830C2FB62419C64900CA54C6 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

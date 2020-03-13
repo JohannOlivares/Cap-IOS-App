@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Parse.initialize(
@@ -24,14 +23,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         )
         
-        if PFUser.current() != nil {
-            let main = UIStoryboard(name: "Main", bundle: nil)
-            let feedNavigationController = main.instantiateViewController(withIdentifier: "feedNavController")
-            
-            window?.rootViewController = feedNavigationController
-        }
-        
         return true
+    }
+    
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
+        guard let windowScene = (scene as? UIWindowScene) else {return}
+        if PFUser.current() != nil {
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            self.window = UIWindow(windowScene: windowScene)
+            
+            self.window?.rootViewController = storyboard.instantiateViewController(identifier: "FeedNavigationController")
+            print("window %@", window)
+            self.window?.makeKeyAndVisible()
+            
+        }
     }
 
     // MARK: UISceneSession Lifecycle

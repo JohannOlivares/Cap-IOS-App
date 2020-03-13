@@ -8,6 +8,7 @@ target 'Cap' do
   # Pods for Cap
   pod "Parse"
   pod "AlamofireImage"
+  pod "MessageInputBar"
 
   target 'CapTests' do
     inherit! :search_paths
