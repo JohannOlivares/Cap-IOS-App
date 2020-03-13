@@ -22,24 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://fast-journey-83048.herokuapp.com/parse"
             })
         )
-        
         return true
     }
     
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
-        guard let windowScene = (scene as? UIWindowScene) else {return}
-        if PFUser.current() != nil {
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            self.window = UIWindow(windowScene: windowScene)
-            
-            self.window?.rootViewController = storyboard.instantiateViewController(identifier: "FeedNavigationController")
-            print("window %@", window)
-            self.window?.makeKeyAndVisible()
-            
-        }
-    }
 
     // MARK: UISceneSession Lifecycle
 
