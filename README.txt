@@ -8,7 +8,7 @@ Time spent: **6** hours spent in total
 
 The following **required** functionality is completed:
 
-- [] User stays logged in across restarts. (1pt)
+- [x] User stays logged in across restarts. (1pt)
 - [x] User can log out. (1pt)
 - [x] User can view comments on a post. (3pts)
 - [x] User can add a new comment. (5pts)
@@ -22,7 +22,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/iWOujgy.gifv' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/iWOujgy.gifv' title='Video Walkthrough' width='150' alt='Video Walkthrough' />
 
 # Parstagram - Part I
 
